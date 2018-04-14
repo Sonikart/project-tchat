@@ -162,6 +162,21 @@ li{
         height: 100%;
         background-color: $fond-list;
 
+        .devenir__vip{
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            width: 100%;
+            left: 0; right: 0;
+            background-color: red;
+            line-height: 40px;
+            color: white;
+            text-align: center;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
         .title-list{
             position: relative;
             height: 30px;

@@ -111,6 +111,6 @@ jQuery(document).ready(function($) {
                 }  
 
             });
-        }, config.interval_p);
+        }, 500);
     }); 
 });

@@ -176,6 +176,23 @@ li .date {
   background-color: #1f1f1f;
 }
 /* line 165, ../sass/application.scss */
+.view .list .devenir__vip {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: red;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+}
+/* line 175, ../sass/application.scss */
+.view .list .devenir__vip:hover {
+  cursor: pointer;
+}
+/* line 180, ../sass/application.scss */
 .view .list .title-list {
   position: relative;
   height: 30px;
@@ -186,7 +203,7 @@ li .date {
   background-color: #1f1f1f;
   text-align: center;
 }
-/* line 174, ../sass/application.scss */
+/* line 189, ../sass/application.scss */
 .view .list li {
   height: 20px;
   left: 25px;
@@ -194,7 +211,7 @@ li .date {
   font-size: 14px;
   text-indent: 35px;
 }
-/* line 182, ../sass/application.scss */
+/* line 197, ../sass/application.scss */
 .view .list .avatar_list {
   height: 25px;
   width: 25px;
@@ -204,7 +221,7 @@ li .date {
   margin-left: -35px;
   margin-right: 25px;
 }
-/* line 193, ../sass/application.scss */
+/* line 208, ../sass/application.scss */
 .view .channel {
   position: absolute;
   top: 0;
@@ -290,20 +307,20 @@ li .date {
 .view .channel .list__salon__active .active__salon {
   background: rgba(245, 23, 84, 0.4);
 }
-/* line 205, ../sass/application.scss */
+/* line 220, ../sass/application.scss */
 .view .message {
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 15px 25px;
 }
-/* line 218, ../sass/application.scss */
+/* line 233, ../sass/application.scss */
 .view .message .left {
   float: left;
   width: 100%;
   color: #f51754;
   word-break: break-all;
 }
-/* line 226, ../sass/application.scss */
+/* line 241, ../sass/application.scss */
 .view .message .right {
   float: left;
   width: 100%;
@@ -311,7 +328,7 @@ li .date {
   word-break: break-all;
 }
 
-/* line 236, ../sass/application.scss */
+/* line 251, ../sass/application.scss */
 .send {
   position: absolute;
   height: 60px;
@@ -320,7 +337,7 @@ li .date {
   right: 0;
   left: 0;
 }
-/* line 243, ../sass/application.scss */
+/* line 258, ../sass/application.scss */
 .send form {
   position: absolute;
   left: 0;
@@ -329,7 +346,7 @@ li .date {
   bottom: 0;
   padding: 10px 10px;
 }
-/* line 248, ../sass/application.scss */
+/* line 263, ../sass/application.scss */
 .send form input {
   width: 82%;
   border: none;
@@ -341,7 +358,7 @@ li .date {
   color: #E2E2E3;
   font-size: 18px;
 }
-/* line 262, ../sass/application.scss */
+/* line 277, ../sass/application.scss */
 .send form button {
   position: absolute;
   top: 0px;
@@ -352,7 +369,7 @@ li .date {
   border: none;
   color: white;
 }
-/* line 273, ../sass/application.scss */
+/* line 288, ../sass/application.scss */
 .send form button i {
   font-size: 25px;
   color: #e5214a;

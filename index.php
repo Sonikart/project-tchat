@@ -87,6 +87,9 @@
                 }
             ?>  
             </div>
+            <div class="devenir__vip">
+                Devenir VIP            
+            </div>
         </section>
         <section class="channel">
             <div class="information_profil">
