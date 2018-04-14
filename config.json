@@ -1,0 +1,5 @@
+{
+    "show_notificate":"3000",
+    "check_notificate": "1000",
+    "interval_p": "100"
+}

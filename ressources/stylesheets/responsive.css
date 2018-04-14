@@ -1,0 +1,20 @@
+@media only screen and (max-width: 900px) {
+  /* line 5, ../sass/responsive.scss */
+  .message {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 230px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* line 11, ../sass/responsive.scss */
+  .message {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    right: 230px;
+  }
+}

@@ -1,0 +1,67 @@
+.information_profil{
+    height: 270px;
+    width: 100%;
+    background-color: #2e2f2f;
+
+    .pics_profil{
+        padding-top:25px;
+        height: 180px;
+        width: 100%;
+
+        .pics_profil_avatar{
+            position: absolute;
+            margin-top:10px;
+            height: 100px;
+            width: 100px;
+            border-radius:50%;
+            left: 0; right:0;
+            margin: auto;
+        }
+
+        .information__connect{
+            margin-top:115px;
+            text-align: center;
+            p{
+                font-size: 18px;
+            }
+            .sous_title{
+                font-size:14px;
+            }
+            .icon_profil{
+                margin-top:10px;
+                .icon_profil{
+                    font-size:25px;
+                    padding: 0 10px;
+                    &:hover{
+                        cursor: pointer;
+                        color: $rouge;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.list__salon__active{
+    position: absolute;
+    margin-top:65px;
+    height: auto;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+
+    .name__salon{
+        height:10px;
+        font-size:15px;
+        line-height: 10px;
+        padding: 10px 10px;
+        &:hover{
+            cursor: pointer;
+            background: rgba($rouge, 0.4);
+        }
+    }
+
+    .active__salon{
+        background: rgba($rouge, 0.4);
+    }
+}
