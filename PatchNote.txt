@@ -1,1 +1,3 @@
 Ici, ajouter les bugs et correctif a ameliorer.
+
+1: Ameliorer le systeme de VIP.
