@@ -88,8 +88,8 @@
                 }
             ?>  
             </div>
-            <div class="devenir__vip">
-                Devenir VIP            
+            <div id="open_check" class="devenir__vip">
+                <i class="far fa-star"></i> Devenir VIP            
             </div>
         </section>
         <section class="channel">

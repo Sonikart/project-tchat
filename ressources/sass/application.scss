@@ -40,8 +40,16 @@ body, html{
     margin-top:25px;
     margin-bottom:25px;
 }
+.fas{
+    color: $grey;
+    &:hover{
+        cursor: pointer;
+        color: $rouge;
+    }
+}
 
 .color_vip{
+    display: none;
     z-index: 2000 !important;
     position: absolute;
     height: 100%;
@@ -234,7 +242,8 @@ li{
             height: 40px;
             width: 100%;
             left: 0; right: 0;
-            background-color: red;
+            background-color: $rouge;
+            font-family: 'Montserrat', sans-serif;
             line-height: 40px;
             color: white;
             text-align: center;

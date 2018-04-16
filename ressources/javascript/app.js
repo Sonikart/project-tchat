@@ -124,6 +124,13 @@ jQuery(document).ready(function($) {
                 var json = $.parseJSON(data);
                 console.log(json.error + json.type);
             })
-        })
+        });
+
+        $('#open_check').click(function(){
+            $('#window_vip').fadeIn(400);
+            $('#close_window_vip').click(function(){
+                $('#window_vip').fadeOut(500);
+            })
+        });
     }); 
 });

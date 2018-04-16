@@ -1,6 +1,7 @@
-<div class="color_vip">
+<div id="window_vip" class="color_vip">
     <div class="content_vip">
-        <h4 class="message_error_vip">Activer votre clef <span class="red">VIP</span></h4>
+        <i id="close_window_vip" style="float: right;" class="fas fa-times"></i>
+        <h4 class="message_error_vip"><i class="far fa-star"></i> Activer votre clef <span class="red">VIP</span></h4>
         <hr>
         <form id="check_token" class="form-control">
             <input type="text" name="token" placeholder="Votre clef : #4F4311OPED4FS1FDS2FDS">
