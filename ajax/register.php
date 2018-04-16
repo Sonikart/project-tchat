@@ -10,13 +10,15 @@
 			$verif_email = $site->bdd->query('SELECT * FROM utilisateurs WHERE email = "'.$site->security($_POST['email']).'"');
 			if($verif_email->rowCount() != 1)
 			{
-				$add_user = $site->bdd->prepare('INSERT INTO utilisateurs (username, password, email, rank, avatar) VALUES (:username, :password, :email, :rank, :avatar)');
+				$add_user = $site->bdd->prepare('INSERT INTO utilisateurs (username, password, email, rank, avatar, position, color) VALUES (:username, :password, :email, :rank, :avatar, :position, :color)');
 				$add_user->execute(array(
 					'username'	=> $site->security($_POST['username']),
 					'password'	=> md5($site->security($_POST['password'])),
 					'email'		=> $site->security($_POST['email']),
 					'rank'		=> 2,
-					'avatar'	=> 'https://upload.wikimedia.org/wikipedia/commons/f/f4/User_Avatar_2.png'
+					'avatar'	=> 'https://upload.wikimedia.org/wikipedia/commons/f/f4/User_Avatar_2.png',
+					'position'	=> '0',
+					'color'		=> '#FFF'
 				));
 
 				$status		= 'success';
