@@ -55,7 +55,7 @@
     <div class="masque_color"></div>
     <div class="menu__logo"></div>
 	<header class="header">
-		Websocket.io | Node
+		Teufeurs.eu
 	</header>
     <?php include 'files/navigation.php'; ?>
     <section class="view">
