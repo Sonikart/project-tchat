@@ -1,1 +1,2 @@
-/handler/mysql.php
+.gitignore
+.handler/mysql.php
