@@ -112,5 +112,18 @@ jQuery(document).ready(function($) {
 
             });
         }, 500);
+
+        $('#check_token').on('submit', function(e){
+            e.preventDefault();
+            $.ajax({
+                url: 'ajax/check_token.php',
+                type: 'POST',
+                data: $(this).serialize(),
+            })
+            .done(function(data){
+                var json = $.parseJSON(data);
+                console.log(json.error + json.type);
+            })
+        })
     }); 
 });

@@ -52,6 +52,7 @@
     <title><?= $site->get_config('name_app'); ?></title>
 </head>
 <body>
+    <?php require 'controllers/devenir_vip.php'; ?>
     <div class="masque_color"></div>
     <div class="menu__logo"></div>
 	<header class="header">

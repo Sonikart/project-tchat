@@ -1,6 +1,9 @@
 @import "color";
 @import "responsive";
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: #2e2f2f;
@@ -23,6 +26,69 @@ body, html{
     color: white;
     font-family: 'Segoe Ui';
     overflow-x: hidden;
+
+    h1, h2, h3, h4, h5, h6{
+        margin: 0;
+    }
+}
+
+.red{
+    color: $rouge;
+}
+
+.form-control{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.color_vip{
+    z-index: 2000 !important;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:rgba(black, 0.8);
+
+    .content_vip{
+        position: absolute;
+        height: 350px;
+        width: 550px;
+        background-color: $fond-list;
+        left: 0; right: 0; 
+        top: 0; bottom: 0;
+        margin: auto;
+        padding:15px 15px;
+
+        input{
+            width: 99%;
+            height:27.5px;
+            text-indent: 15px;
+            background: $grey;
+            border: none;
+            outline: none;
+            border: 1px solid $grey;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+        input:focus{
+            border-bottom:2px solid $rouge;
+            color: $rouge;
+        }
+        button{
+            margin-top:10px;
+            background-color: $rouge;
+            color: $grey;
+            width: 99%;
+            height: 30px;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        button:hover{
+            cursor: pointer;
+            background: $fond-list;
+            color: $rouge;
+            border:1px solid $rouge;
+        }
+    }
 }
 
 .masque_color{
@@ -289,3 +355,4 @@ li{
         }
     }
 }
+
