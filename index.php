@@ -11,7 +11,7 @@
     }
     else
     {
-        header('Location: ?salon=50855206');
+        header('Location: ?salon=salutdetrak');
     }
 
     if($_SESSION['start_login'] != 1){
