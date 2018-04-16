@@ -26,6 +26,8 @@
 			$error = "Veuillez remplir le champs 'salon'";
 		}
 	}
+	
+	$token = bin2hex(openssl_random_pseudo_bytes(16));
 ?>
 <body>
 	<form method="POST">
@@ -42,5 +44,8 @@
 		<li>Numeros du salon : <b><?= $salon['id_salon']; ?></b> | Nom du salon : <b><a target="_blank" href="http://localhost/tchat/index.php?salon=<?= $salon['id_salon'] ?>"><?= $salon['name']; ?></a></b></li>
 		<?php } ?>
 	</ul>
+	<p>
+		Token generé : <?= $token; ?>
+	</p>
 </body>
 </html>

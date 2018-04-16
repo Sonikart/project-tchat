@@ -123,6 +123,8 @@ jQuery(document).ready(function($) {
             .done(function(data){
                 var json = $.parseJSON(data);
                 console.log(json.error + json.type);
+                $('.message_error_vip').html('<strong>System</strong> : ' + json.error);
+                $('input[name=token]').val('');
             })
         });
 
