@@ -1,2 +1,1 @@
-.gitignore
-git rm --cached --force /handler/mysql.php
+/handler/mysql.php
