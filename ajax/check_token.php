@@ -6,10 +6,17 @@ if(!empty($_POST['token'])){
         if($check_exist->rowCount() === 1){
             $check_exist = $check_exist->fetch();
             if($check_exist['validate'] != 1){
-                $update = $site->bdd->query('UPDATE token_vip SET validate = 1 WHERE token = "'.$site->security($_POST['token']).'"');
-                $update_rank = $site->bdd->query('UPDATE utilisateurs SET rank = 3 WHERE username = "'.$_SESSION['username'].'"');
-                $type   = 'success';
-                $error  = "Félicitation, vous êtes maintenant VIP.";
+                $get_info = $site->bdd->query('SELECT * FROM utilisateurs WHERE username = "'.$_SESSION['username'].'"');
+                $get_info = $get_info->fetch();
+                if($get_info['rank'] > 1){
+                    $update = $site->bdd->query('UPDATE token_vip SET validate = 1 WHERE token = "'.$site->security($_POST['token']).'"');
+                    $update_rank = $site->bdd->query('UPDATE utilisateurs SET rank = 3 WHERE username = "'.$_SESSION['username'].'"');
+                    $type   = 'success';
+                    $error  = "Félicitation, vous êtes maintenant VIP.";
+                } else {
+                    $type   = 'warning';
+                    $error  = "Votre rang administrateur ne vous permet pas d'utiliser une clef VIP.";
+                }
             } else {
                 $type   = 'danger';
                 $error  = "Attention, ce token à déjà été activer.";

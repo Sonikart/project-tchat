@@ -124,6 +124,7 @@ jQuery(document).ready(function($) {
             .done(function(data){
                 var json = $.parseJSON(data);
                 console.log(json.error + json.type);
+                $('input[name=token]').val('');
                 modal_notificate.show();
                 modal_notificate.html(json.error);
                 if(json.type === 'success'){
@@ -139,6 +140,7 @@ jQuery(document).ready(function($) {
                     }, 2100);
                 }
                 if(json.type === 'warning'){
+                    modal_notificate.addClass('warning');
                     setTimeout(function(){
                         modal_notificate.removeClass('warning');
                     }, 2100);
