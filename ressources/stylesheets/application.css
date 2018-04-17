@@ -19,24 +19,54 @@
     right: 230px;
   }
 }
-/* line 7, ../sass/application.scss */
+/* line 1, ../sass/.env.scss */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #2e2f2f;
 }
 
-/* line 11, ../sass/application.scss */
+/* line 5, ../sass/.env.scss */
 ::-webkit-scrollbar {
   width: 6px;
   background-color: #2e2f2f;
 }
 
-/* line 15, ../sass/application.scss */
+/* line 9, ../sass/.env.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #f51754;
 }
 
-/* line 19, ../sass/application.scss */
+/* line 13, ../sass/.env.scss */
+.success {
+  background-color: #27ae60;
+}
+
+/* line 17, ../sass/.env.scss */
+.danger {
+  background-color: #e74c3c;
+}
+
+/* line 21, ../sass/.env.scss */
+.warning {
+  background-color: #e67e22;
+}
+
+/* line 25, ../sass/.env.scss */
+.info {
+  background-color: #3498db;
+}
+
+/* line 29, ../sass/.env.scss */
+.dark {
+  background-color: #34495e;
+}
+
+/* line 33, ../sass/.env.scss */
+.primary {
+  background-color: #f51754;
+}
+
+/* line 8, ../sass/application.scss */
 body, html {
   margin: 0;
   padding: 0;
@@ -47,33 +77,33 @@ body, html {
   font-family: 'Segoe Ui';
   overflow-x: hidden;
 }
-/* line 30, ../sass/application.scss */
+/* line 19, ../sass/application.scss */
 body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3, html h4, html h5, html h6 {
   margin: 0;
 }
 
-/* line 35, ../sass/application.scss */
+/* line 24, ../sass/application.scss */
 .red {
   color: #f51754;
 }
 
-/* line 39, ../sass/application.scss */
+/* line 28, ../sass/application.scss */
 .form-control {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-/* line 43, ../sass/application.scss */
+/* line 32, ../sass/application.scss */
 .fas {
   color: #E2E2E3;
 }
-/* line 45, ../sass/application.scss */
+/* line 34, ../sass/application.scss */
 .fas:hover {
   cursor: pointer;
   color: #f51754;
 }
 
-/* line 51, ../sass/application.scss */
+/* line 40, ../sass/application.scss */
 .color_vip {
   display: none;
   z-index: 2000 !important;
@@ -82,7 +112,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3,
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 59, ../sass/application.scss */
+/* line 48, ../sass/application.scss */
 .color_vip .content_vip {
   position: absolute;
   height: 350px;
@@ -95,7 +125,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3,
   margin: auto;
   padding: 15px 15px;
 }
-/* line 69, ../sass/application.scss */
+/* line 58, ../sass/application.scss */
 .color_vip .content_vip input {
   width: 99%;
   height: 27.5px;
@@ -107,12 +137,12 @@ body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3,
   color: black;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 80, ../sass/application.scss */
+/* line 69, ../sass/application.scss */
 .color_vip .content_vip input:focus {
   border-bottom: 2px solid #f51754;
   color: #f51754;
 }
-/* line 84, ../sass/application.scss */
+/* line 73, ../sass/application.scss */
 .color_vip .content_vip button {
   margin-top: 10px;
   background-color: #f51754;
@@ -122,7 +152,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3,
   border: none;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 93, ../sass/application.scss */
+/* line 82, ../sass/application.scss */
 .color_vip .content_vip button:hover {
   cursor: pointer;
   background: #1f1f1f;
@@ -130,7 +160,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3,
   border: 1px solid #f51754;
 }
 
-/* line 102, ../sass/application.scss */
+/* line 91, ../sass/application.scss */
 .masque_color {
   position: absolute;
   width: 100%;
@@ -138,18 +168,18 @@ body h1, body h2, body h3, body h4, body h5, body h6, html h1, html h2, html h3,
   background: rgba(46, 47, 47, 0.8);
 }
 
-/* line 109, ../sass/application.scss */
+/* line 98, ../sass/application.scss */
 p {
   margin: 0;
   padding: 0;
 }
 
-/* line 111, ../sass/application.scss */
+/* line 100, ../sass/application.scss */
 li {
   list-style: none;
   padding: 5px 5px;
 }
-/* line 115, ../sass/application.scss */
+/* line 104, ../sass/application.scss */
 li .date {
   margin-top: 7px;
   font-size: 12px;
@@ -157,13 +187,13 @@ li .date {
   float: right;
 }
 
-/* line 122, ../sass/application.scss */
+/* line 111, ../sass/application.scss */
 .list_user_connected {
   list-style: none;
   padding: 10px 10px;
 }
 
-/* line 149, ../sass/application.scss */
+/* line 138, ../sass/application.scss */
 .header {
   position: absolute;
   height: 60px;
@@ -178,7 +208,7 @@ li .date {
   text-transform: uppercase;
 }
 
-/* line 163, ../sass/application.scss */
+/* line 152, ../sass/application.scss */
 .menu {
   display: none;
   z-index: 5;
@@ -191,7 +221,7 @@ li .date {
   text-align: center;
   background-color: #272928;
 }
-/* line 177, ../sass/application.scss */
+/* line 166, ../sass/application.scss */
 .menu a {
   position: relative;
   display: block;
@@ -203,7 +233,7 @@ li .date {
   color: #f51754;
 }
 
-/* line 190, ../sass/application.scss */
+/* line 179, ../sass/application.scss */
 .view {
   position: absolute;
   top: 60px;
@@ -211,19 +241,18 @@ li .date {
   right: 0;
   bottom: 60px;
 }
-/* line 194, ../sass/application.scss */
+/* line 183, ../sass/application.scss */
 .view .alert__users {
   display: none;
   position: absolute;
-  z-index: 1000 !important;
-  bottom: 15px;
-  left: 15px;
+  z-index: 5000 !important;
+  top: 15px;
+  right: 15px;
   width: 350px;
   height: auto;
-  background-color: #e74c3c;
   padding: 10px 15px;
 }
-/* line 206, ../sass/application.scss */
+/* line 194, ../sass/application.scss */
 .view .alerte_maintenance {
   position: absolute;
   z-index: 1000 !important;
@@ -235,7 +264,7 @@ li .date {
   padding: 0 25px;
   text-align: center;
 }
-/* line 218, ../sass/application.scss */
+/* line 206, ../sass/application.scss */
 .view .clear {
   position: fixed;
   top: 12.5px;
@@ -243,12 +272,12 @@ li .date {
   float: right;
   font-size: 35px;
 }
-/* line 224, ../sass/application.scss */
+/* line 212, ../sass/application.scss */
 .view .clear:hover {
   cursor: pointer;
   color: #f51754;
 }
-/* line 230, ../sass/application.scss */
+/* line 218, ../sass/application.scss */
 .view .list {
   position: absolute;
   left: 0;
@@ -258,7 +287,7 @@ li .date {
   height: 100%;
   background-color: #1f1f1f;
 }
-/* line 239, ../sass/application.scss */
+/* line 227, ../sass/application.scss */
 .view .list .devenir__vip {
   position: absolute;
   bottom: 0;
@@ -272,11 +301,11 @@ li .date {
   color: white;
   text-align: center;
 }
-/* line 250, ../sass/application.scss */
+/* line 238, ../sass/application.scss */
 .view .list .devenir__vip:hover {
   cursor: pointer;
 }
-/* line 255, ../sass/application.scss */
+/* line 243, ../sass/application.scss */
 .view .list .title-list {
   position: relative;
   height: 30px;
@@ -287,7 +316,7 @@ li .date {
   background-color: #1f1f1f;
   text-align: center;
 }
-/* line 264, ../sass/application.scss */
+/* line 252, ../sass/application.scss */
 .view .list li {
   height: 20px;
   left: 25px;
@@ -295,7 +324,7 @@ li .date {
   font-size: 14px;
   text-indent: 35px;
 }
-/* line 272, ../sass/application.scss */
+/* line 260, ../sass/application.scss */
 .view .list .avatar_list {
   height: 25px;
   width: 25px;
@@ -305,7 +334,7 @@ li .date {
   margin-left: -35px;
   margin-right: 25px;
 }
-/* line 283, ../sass/application.scss */
+/* line 271, ../sass/application.scss */
 .view .channel {
   position: absolute;
   top: 0;
@@ -391,20 +420,20 @@ li .date {
 .view .channel .list__salon__active .active__salon {
   background: rgba(245, 23, 84, 0.4);
 }
-/* line 295, ../sass/application.scss */
+/* line 283, ../sass/application.scss */
 .view .message {
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 15px 25px;
 }
-/* line 308, ../sass/application.scss */
+/* line 296, ../sass/application.scss */
 .view .message .left {
   float: left;
   width: 100%;
   color: #f51754;
   word-break: break-all;
 }
-/* line 316, ../sass/application.scss */
+/* line 304, ../sass/application.scss */
 .view .message .right {
   float: left;
   width: 100%;
@@ -412,7 +441,7 @@ li .date {
   word-break: break-all;
 }
 
-/* line 326, ../sass/application.scss */
+/* line 314, ../sass/application.scss */
 .send {
   position: absolute;
   height: 60px;
@@ -421,7 +450,7 @@ li .date {
   right: 0;
   left: 0;
 }
-/* line 333, ../sass/application.scss */
+/* line 321, ../sass/application.scss */
 .send form {
   position: absolute;
   left: 0;
@@ -430,7 +459,7 @@ li .date {
   bottom: 0;
   padding: 10px 10px;
 }
-/* line 338, ../sass/application.scss */
+/* line 326, ../sass/application.scss */
 .send form input {
   width: 82%;
   border: none;
@@ -442,7 +471,7 @@ li .date {
   color: #E2E2E3;
   font-size: 18px;
 }
-/* line 352, ../sass/application.scss */
+/* line 340, ../sass/application.scss */
 .send form button {
   position: absolute;
   top: 0px;
@@ -453,7 +482,7 @@ li .date {
   border: none;
   color: white;
 }
-/* line 363, ../sass/application.scss */
+/* line 351, ../sass/application.scss */
 .send form button i {
   font-size: 25px;
   color: #e5214a;

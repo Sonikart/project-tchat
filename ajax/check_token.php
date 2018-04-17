@@ -9,7 +9,7 @@ if(!empty($_POST['token'])){
                 $update = $site->bdd->query('UPDATE token_vip SET validate = 1 WHERE token = "'.$site->security($_POST['token']).'"');
                 $update_rank = $site->bdd->query('UPDATE utilisateurs SET rank = 3 WHERE username = "'.$_SESSION['username'].'"');
                 $type   = 'success';
-                $error  = "Vous êtes maintenant VIP.";
+                $error  = "Félicitation, vous êtes maintenant VIP.";
             } else {
                 $type   = 'danger';
                 $error  = "Attention, ce token à déjà été activer.";

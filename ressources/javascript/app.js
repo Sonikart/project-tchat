@@ -1,8 +1,10 @@
 jQuery(document).ready(function($) {
 
+    var modal_notificate = $('#alerte_notificate');
+
     $.get('config.json', function(config){
         // Ont charge le fichier de configuration JSON pour en retourner les parametres
-
+        console.log(config);
         $('.menu__logo').click(function(e){
             e.preventDefault;
             $('.menu').toggle(400);
@@ -57,7 +59,6 @@ jQuery(document).ready(function($) {
             $.get('ajax/check_notificate.php', function(data){
                 var json = $.parseJSON(data);
                 if(json.type  == 'success'){
-                    var modal_notificate = $('#alerte_notificate');
                     modal_notificate.show();
                     modal_notificate.html(json.error);
                     setTimeout(function(){           
@@ -123,8 +124,28 @@ jQuery(document).ready(function($) {
             .done(function(data){
                 var json = $.parseJSON(data);
                 console.log(json.error + json.type);
-                $('.message_error_vip').html('<strong>System</strong> : ' + json.error);
-                $('input[name=token]').val('');
+                modal_notificate.show();
+                modal_notificate.html(json.error);
+                if(json.type === 'success'){
+                    modal_notificate.addClass('success');
+                    setTimeout(function(){
+                        modal_notificate.removeClass('success');
+                    }, 2100);
+                }
+                if(json.type === 'danger'){
+                    modal_notificate.addClass('danger');
+                    setTimeout(function(){
+                        modal_notificate.removeClass('danger');
+                    }, 2100);
+                }
+                if(json.type === 'warning'){
+                    setTimeout(function(){
+                        modal_notificate.removeClass('warning');
+                    }, 2100);
+                }
+                setTimeout(function(){
+                    modal_notificate.fadeOut(400);
+                }, 2000);
             })
         });
 
